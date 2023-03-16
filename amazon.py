@@ -126,7 +126,7 @@ if __name__ == '__main__':
  
         new_soup = BeautifulSoup(new_webpage.content, "html.parser")
 
-product_detail = [title(soup),price(soup),rating(soup),review(soup),product_available(soup)]
+product_detail = [title(soup),price(soup),rating(soup),review(soup),product_availability(soup)]
 with open('amazon.csv', 'a', newline='', encoding='utf-8') as file:
     writer = csv.writer(file)
     writer.writerow(product_detail)
